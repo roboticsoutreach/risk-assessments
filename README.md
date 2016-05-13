@@ -10,6 +10,8 @@ Additionally, they require a risk assessment for each event we run to be submitt
 
 Risk assessments are submitted by email to groups@susu.org.
 
+SUSU provides a risk assessment template in DOCX format. Presumably, submitted risk assessments should follow this template and also be in DOCX format.
+
 More information about SUSU's risk assessment procedure can be found on their [website][susu-risk-assessments].
 
 
