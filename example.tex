@@ -1,0 +1,96 @@
+% ================================================
+% ============== ASSESSMENT DETAILS ==============
+% ================================================
+
+% The name of the student society.
+\newcommand{\groupname}{Student Robotics (Southampton)}
+
+% The name and email address of the person preparing this risk assessment.
+\newcommand{\assessorname}{Kier Davis}
+\newcommand{\assessoremail}{me@kierdavis.com}
+
+% The date on which this risk assessment was completed.
+\newcommand{\assessmentdate}{Jan 1, 2000}
+
+
+% ================================================
+% =============== ACTIVITY DETAILS ===============
+% ================================================
+
+% The name of the activity (either an event, or "General Activities").
+\newcommand{\activityname}{World Robot Appreciation Day}
+
+% The date(s) and time(s) of the activity.
+% For "General Activities", these may be "Wednesday afternoons" and
+% "17:00--23:00", for example.
+\newcommand{\activitydate}{Jan 1, 2000}
+\newcommand{\activitytime}{All day}
+
+% The location the activity takes place in.
+% The seminar room in Mountbatten (where the broomcupboard is) is 53/4025.
+\newcommand{\activitylocation}{Room 53/4025 (Mountbatten building)}
+
+% A summary of the activity. It should describe:
+%   - what groups of people are attending, and approximate numbers of people in
+%     each group
+%   - what tasks will be done
+%   - what equipment will be involved
+%   - any other relevant information
+\newcommand{\activitysummary}{
+    % ...
+}
+
+
+% ================================================
+% ================== REFERENCES ==================
+% ================================================
+
+% A list of external sources of information that were referred to when preparing
+% this document. A couple of examples are given here.
+\newcommand{\references}{
+    \reference{Guidance from the Health and Safety Executive. \\
+    \url{http://www.hse.gov.uk/risk/index.htm}}
+    
+    \reference{H\&S guidance from the Union Southampton website. \\
+    \url{https://www.unionsouthampton.org/groups/admin/howto/protection}}
+    
+    % ...
+}
+
+
+% ================================================
+% ==================== RISKS =====================
+% ================================================
+
+% A list of hazards, their control measures and their risk levels.
+% Likelihood levels:
+%   1 - May only occur in exceptional circumstances
+%   2 - Might occur in some circumstances
+%   3 - Will likely occur in most circumstances
+% Impact levels:
+%   1 - Superficial or minor injury. Can usually be handled by local first aid
+%       procedures.
+%   2 - Serious injury, possibly resulting in hospitalisation for up to thre
+%       days. Complete recovery/rehabilitation could take several months.
+%   3 - Major or fatal injury. Requires extensive medical treatment, including
+%       at least three days in hospital.
+\newcommand{\risks}{
+    \risk
+        {<a hazardous task or object>}
+        {<who may be affected by this hazard, and in what ways>}
+        {\item <a control measure already in place>
+         \item <another control measure already in place>
+         \item ...}
+        {\item <an additional control measure that needs to be put in place>
+         \item <another additional control measure that needs to be put in place>
+         \item ...}
+        {<likelihood level>}
+        {<impact level>}
+    
+    % ...
+}
+
+
+% Ensure that this points to template.tex, which is found in the
+% repository root.
+\input{template.tex}
