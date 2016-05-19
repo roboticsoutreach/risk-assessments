@@ -1,0 +1,205 @@
+% This file specifies the risk assessment format. It is expected that users will
+% define the following macros to specify the content of the risk assessment, and
+% then \input this file to generate a document using these macros.
+%   \groupname - name of student group
+%   \assessorname - name of risk assessor
+%   \assessoremail - email address of risk assessor
+%   \assessmentdate - date risk assessment was completed
+%   \activityname - title of event
+%   \activitydate - date(s) of event
+%   \activitytime - time(s) of event
+%   \activitylocation - location(s) of event
+%   \activitysummary - summary of event
+%   \references - links to additional documents
+%   \risks - list of hazards and their control measures
+% See template.tex for a more complete description of these macros.
+
+\documentclass[a4paper,landscape]{article}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{footnote}
+\usepackage[margin=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{intcalc}
+\usepackage{longtable}
+\usepackage{multicol}
+
+% Allow \footnote to be used inside tables.
+\makesavenoteenv{tabular*}
+
+% Define a way to render hyperlinked email addresses.
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+
+% No paragraph indentation, 5pt spacing between paragraphs.
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+
+% Set the gutter between text columns to be 1.5cm.
+\setlength{\columnsep}{1.5cm}
+
+% Title, author and date of this document.
+\newcommand{\doctitle}{Risk Assessment: \activityname}
+\newcommand{\docauthor}{\assessorname}
+\newcommand{\docdate}{\assessmentdate}
+\title{\doctitle}
+\author{\docauthor}
+\date{\docdate}
+
+% PDF output parameters.
+\hypersetup{
+    unicode=true,
+    pdftitle={\doctitle},
+    pdfauthor={\docauthor}
+}
+
+\begin{document}
+
+% The title.
+{
+    \centering
+    % Use size 28 font. 1.05x gives 29.4pt line spacing.
+    \fontsize{28pt}{29.4pt} \selectfont
+    \doctitle\\
+}
+
+\vspace{25pt}
+
+% Set out the assessment details, activity details and references sections in a
+% two-column layout.
+\raggedcolumns
+\begin{multicols*}{2}
+
+\section*{Assessment Details}
+
+\begin{tabular*}{\linewidth}[c]{p{3cm}p{\linewidth-3cm}}
+    \textbf{Student group:} & \groupname \\
+    \textbf{Assessor name:} & \assessorname \\
+    \textbf{Assessor email:} & \email{\assessoremail} \\
+    \textbf{Assessment date:} & \assessmentdate \\
+\end{tabular*}
+
+\section*{References}
+
+% This command is used inside the user-defined \references command to
+% encapsulate the formatting.
+\newcommand{\reference}[1]{\item #1}
+
+Additional documents or other sources of information that were referred to when
+preparing this risk assessment include:
+\begin{itemize}
+    \references
+\end{itemize}
+
+\columnbreak
+
+\section*{Activity Details}
+
+\begin{tabular*}{\linewidth}[c]{p{2cm}p{\linewidth-2cm}}
+    \textbf{Date(s):} & \activitydate \\
+    \textbf{Time(s):} & \activitytime \\
+    \textbf{Location(s):} & \activitylocation \\
+    \textbf{Summary:} & \activitysummary \\
+\end{tabular*}
+
+\end{multicols*}
+
+% Begin risks table on a new page.
+\newpage
+
+\section*{Risks}
+
+% This command is used inside the user-defined \risks command to encapsulate the
+% formatting. Arguments are:
+%   #1: hazard
+%   #2: who may be affected and how
+%   #3: list of control measures in place (inserted into an itemize environment)
+%   #4: list of additional control measures to put in place
+%   #5: likelihood level
+%   #6: impact level
+\newcommand{\risk}[6]{
+    #1 &
+    #2 &
+    \vspace{-6mm}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt plus 1pt}
+        #3
+    \end{itemize} &
+    \vspace{-6mm}
+    \begin{itemize}
+        \setlength{\itemsep}{0pt plus 1pt}
+        #4
+    \end{itemize} &
+    \intcalcMul{#5}{#6} \\
+}
+
+\begin{longtable}{>{\raggedright}p{4cm}%
+                  p{5cm}%
+                  p{6cm}%
+                  p{6cm}%
+                  p{2.2cm}}
+    \toprule
+    Hazard &
+    Who may be affected and how &
+    Control measures in place &
+    Additional control measures &
+    Risk level (/9) \\
+    \midrule
+    \endhead
+    \risks
+    \bottomrule
+\end{longtable}
+
+\newpage
+
+\section*{Review}
+
+% A table with spaces for up to three reviewers to sign and add comments.
+\begin{tabular}{|p{6cm}|p{10cm}|p{4cm}|p{3cm}|}
+    \hline
+    Reviewer name/role &
+    Comments &
+    Signed &
+    Date \\
+    \hline
+    & & & \\[1.5cm]
+    \hline
+    & & & \\[1.5cm]
+    \hline
+    & & & \\[1.5cm]
+    \hline
+\end{tabular}
+
+% Description of likelihood levels, impact levels and risk levels.
+\section*{Assessment Guidance}
+
+Each hazard is assigned a number between 1 and 3 indicating the likelihood of
+the hazard affecting a person:
+\begin{description}
+    \item[Low (1):] May only occur in exceptional circumstances
+    \item[Medium (2):] Might occur in some circumstances
+    \item[High (3):] Will likely occur in most circumstances
+\end{description}
+
+Similarly, each hazard is assigned a number between 1 and 3 indicating the
+magnitude of the impact that the hazard would have, if it did occur:
+\begin{description}
+    \item[Low (1):] Superficial or minor injury. Can usually be handled by local
+    first aid procedures.
+    \item[Medium (2):] Serious injury, possibly resulting in hospitalisation for
+    up to three days. Complete recovery/rehabilitation could take several months.
+    \item[High (3):] Major or fatal injury. Requires extensive medical treatment,
+    including at least three days in hospital.
+\end{description}
+
+The hazard's \emph{risk level} is then calculated to be the likelihood rating
+multiplied by the impact rating. For example, a hazard that is likely to occur
+in almost all circumstances but only results in a minor injury would have a
+likelihood rating of $3$, an impact rating of $1$, and an overall risk level of
+$3 \times 1 = 3$.
+
+These guidelines are based on those provided in Union Southampton's risk
+assessment template.
+
+\end{document}
