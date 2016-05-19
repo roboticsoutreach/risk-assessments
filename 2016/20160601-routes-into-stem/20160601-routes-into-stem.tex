@@ -1,0 +1,137 @@
+% ================================================
+% ============== ASSESSMENT DETAILS ==============
+% ================================================
+
+% The name of the student society.
+\newcommand{\groupname}{Student Robotics (Southampton)}
+
+% The name and email address of the person preparing this risk assessment.
+\newcommand{\assessorname}{Kier Davis}
+\newcommand{\assessoremail}{me@kierdavis.com}
+
+% The date on which this risk assessment was created.
+\newcommand{\assessmentdate}{May 19, 2016}
+
+
+% ================================================
+% =============== ACTIVITY DETAILS ===============
+% ================================================
+
+% The name of the activity (either an event, or "General Activities").
+\newcommand{\activityname}{``Routes Into STEM'' Outreach Day}
+
+% The date(s) and time(s) of the activity.
+% For "General Activities", these may be "Wednesday afternoons" and
+% "17:00--23:00", for example.
+\newcommand{\activitydate}{June 1, 2016}
+\newcommand{\activitytime}{All day}
+
+% The location the activity takes place in.
+\newcommand{\activitylocation}{Room 53/3028 (Mountbatten building)}
+
+% A summary of the activity. It should describe:
+%   - who is attending
+%   - what tasks will be done
+%   - what equipment will be involved
+\newcommand{\activitysummary}{
+    Between 15 and 30 local schoolchildren in Year 10 are attending a workshop
+    organised by the Electronics and Computer Science department.
+    The workshop involves a class led by members of Student Robotics Southampton
+    and RoboGals Southampton Chapter, who will be referred to as \emph{mentors}.
+    The class involves programming small mBed-based robots to perform a simple
+    task. The schoolchildren will be working on laptops provided by the
+    department. An arena will be constructed by the mentors for the robots to
+    operate in.
+}
+
+
+% ================================================
+% ================== REFERENCES ==================
+% ================================================
+
+% A list of external sources of information that were referred to when preparing
+% this document. 
+\newcommand{\references}{
+    \reference{Guidance from the Health and Safety Executive, including manual
+    handling procedures and case studies of risk assessment writing. \\
+    \url{http://www.hse.gov.uk/risk/index.htm}}
+    
+    \reference{H\&S guidance from the Union Southampton website. \\
+    \url{https://www.unionsouthampton.org/groups/admin/howto/protection}}
+    
+    \reference{Risk assessments prepared for events run by Student Robotics in
+    2015. \\
+    \url{https://github.com/srobo-southampton/risk-assessments/tree/master/old}}
+}
+
+
+% ================================================
+% ==================== RISKS =====================
+% ================================================
+
+\newcommand{\risks}{
+    \risk
+        {Electrical equipment (robots, laptop power supplies)}
+        {Mentors or children could get electrical shocks or burns from faulty
+         equipment.}
+        {\item The robots are low power devices running at no more than 6~volts,
+         so the chance of electric shock is very low.
+         \item The computing equipment is owned by the university and so will
+         have electrically tested.}
+        {\item The ESO\footnote{Equipment and Safety Officer} will verify that
+         all wiring in the robots is sufficiently insulated.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+    
+    \risk
+        {Interaction with autonomous robots}
+        {Mentors or children could encounter minor injuries if the robots move
+         unexpectedly.}
+        {\item Robots are only to be tested under supervision.
+         \item When robots are switched on, they will be treated as though they
+         could become active at any moment.
+         \item The robots do not have any moving parts besides the wheels, which
+         are well guarded by the robot's chassis.}
+        {\item The ESO will verify that the robots do not present any sharp
+         edges. If any are found, they will be covered with thick tape to reduce
+         the chance and severity of injury they could cause.}
+        {1} % Likelihood (/3)
+        {1} % Impact (/3)
+    
+    \risk
+        {Use of manual tools during arena construction}
+        {Mentors could experience minor injury as a result of an accident or
+         through improper use of tools.}
+        {\item Any work requiring use of manual tools will be carried out by
+         someone experienced with DIY tasks.
+         \item Care will be taken with sharp tools to ensure that minimal injury
+         results in the event of an accident.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+    
+    \risk
+        {Manual handling of heavy objects}
+        {Mentors could experience minor injury or back pains resulting from
+        improper lifting methods.}
+        {\item The HSE manual handling guidelines%
+         \footnote{\url{http://www.hse.gov.uk/pubns/indg143.pdf}}
+         are to be followed for all tasks involving heavy lifting.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+    
+    \risk
+        {Obstacles on the floor, such as bags or trailing cables}
+        {Children or mentors may suffer minor injury as a result of tripping.}
+        {\item Cables (primarily the laptop power supplies) will be routed
+         underneath desks wherever possible.
+         \item The children will be instructed to keep all bags tucked underneath
+         desks.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+}
+
+
+\input{../../riskassessment.tex}
