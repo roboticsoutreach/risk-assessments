@@ -2,6 +2,8 @@
 
 This repository contains all risk assessments processed by Student Robotics Southampton group from 2016 onwards.
 
+To create a risk assessment using the template, copy the contents of `example.tex` to a new file following the existing naming convention (`YYYY/YYYYMMDD-ACTIVITY/YYYYMMDD-ACTIVITY.tex`) and fill in the fields in the file. You can also check the source code of existing risk assessments for more specific info.
+
 ## SUSU's risk assessment requirements
 
 SUSU require a risk assessment for our general day-to-day activities to be submitted at least once per year. If this risk assessment is changed during the year then the new copy should of course be re-submitted to SUSU.
