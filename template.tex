@@ -12,6 +12,8 @@
 %   \activitysummary - summary of event
 %   \references - links to additional documents
 %   \risks - list of hazards and their control measures
+%   \postrisks - additional LaTeX source inserted after the Risks section, on
+%                the same page. (optional)
 % See example.tex for a more complete description of these macros.
 
 \documentclass[a4paper,landscape]{article}
@@ -150,6 +152,10 @@ preparing this risk assessment include:
     \risks
     \bottomrule
 \end{longtable}
+
+% Define the \postrisks command to be empty if it is not already defined.
+\providecommand{\postrisks}{\relax}
+\postrisks
 
 \newpage
 
