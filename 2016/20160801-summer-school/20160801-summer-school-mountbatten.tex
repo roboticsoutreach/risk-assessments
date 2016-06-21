@@ -1,0 +1,101 @@
+% Footnotes used inline in the text.
+\newcommand{\manualhandlingfootnote}{\footnote{\url{http://www.hse.gov.uk/pubns/indg143.pdf}}}
+\newcommand{\chargingfootnote}{\footnote{\url{https://www.studentrobotics.org/docs/kit/batteries/imax_b6_charger\#ChargingChecklist}}}
+\newcommand{\estatesfacilitiesfootnote}{\footnote{Estates and Facilities: \url{http://www.southampton.ac.uk/estates/}}}
+\newcommand{\esofootnote}{\footnote{Equipment and Safety Officer; for the duration of this event, this role will be filled by Kier Davis (\email{me@kierdavis.com}).}}
+
+
+\newcommand{\groupname}{Student Robotics (Southampton)}
+\newcommand{\assessorname}{Kier Davis}
+\newcommand{\assessoremail}{me@kierdavis.com}
+\newcommand{\assessmentdate}{June 21, 2016}
+
+
+\newcommand{\activityname}{Summer School (use of Mountbatten building)}
+\newcommand{\activitydate}{August 1 to August 5, 2016}
+\newcommand{\activitytime}{All day}
+\newcommand{\activitylocation}{Room 53/4025 (Mountbatten building)}
+\newcommand{\activitysummary}{
+    The summer school is run by the ECS department with assistance from the
+    Student Robotics organisation. The participants are invited to design,
+    build and test an autonomous robot to perform a complex task. In addition to
+    this main event, there are a number of taught laboratory sessions. Members
+    of Student Robotics will mentor and provide assistance to the participants,
+    as well as set up the arena for the competition and lead the laboratory
+    sessions.
+
+    This risk assessment only covers the use of the room 53/4025, which is used
+    for access to the storage cupboard.
+}
+
+
+\newcommand{\references}{
+    \reference{Guidance from the Health and Safety Executive, including manual
+    handling procedures. \\
+    \url{http://www.hse.gov.uk/risk/index.htm}}
+
+    \reference{H\&S guidance from the Union Southampton website. \\
+    \url{https://www.unionsouthampton.org/groups/admin/howto/protection}}
+
+    \reference{Risk assessments prepared for events run by Student Robotics in 2015. \\
+    \url{https://github.com/srobo-southampton/risk-assessments/tree/master/old}}
+
+    \reference{Lithium polymer battery charging procedure, available on the
+    Student Robotics website. \\
+    \url{https://www.studentrobotics.org/docs/kit/batteries/imax_b6_charger\#ChargingChecklist}}
+}
+
+
+\newcommand{\risks}{
+    \risk
+        {Manual handling of heavy objects}
+        {Mentors could experience minor injury or back pains resulting from
+         improper lifting methods.}
+        {\item The HSE manual handling guidelines\manualhandlingfootnote are to
+         be followed for all tasks involving heavy lifting.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Obstacles on the floor, such as bags, boxes or trailing cables}
+        {Mentors may suffer injury as a result of tripping.}
+        {\item Cables (such as laptop power supplies) will be routed underneath
+         desks wherever possible.
+         \item Cables that cannot be routed under desks will be clearly marked
+         to increase their visibility.
+         \item Bags, boxes and other items that are potential trip hazards will
+         be stacked neatly by the walls whenever possible.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Lithium polymer batteries}
+        {LiPo batteries can ignite if damaged or misused, resulting in
+         smoke/fire.}
+        {\item Batteries will be routinely inspected for signs of damage or
+         swelling, and set aside for safe disposal if necessary.
+         \item Batteries are only to be charged by trained mentors. The battery
+         charging procedure\chargingfootnote is to be followed at all times.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+}
+
+
+\newcommand{\postrisks}{
+    % \newpage
+
+    \subsection*{Risk of fire}
+
+    To minimise the risk of fire resulting from this activity, food and drink
+    will not be allowed near electrical equipment, and naked flames will be
+    prohibited. The risk of fire occurring elsewhere in the building is
+    controlled primarily by the building operator\estatesfacilitiesfootnote.
+    The ESO\esofootnote will ensure that all people present are informed of the
+    locations of the exits and that no fire drills are expected to take place.
+}
+
+
+\input{../../template.tex}
