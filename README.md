@@ -20,8 +20,9 @@ submitted at least 3 weeks prior to the event.
 
 Risk assessments are submitted by email to groups@unionsouthampton.org.
 
-The Union provides a risk assessment template in DOCX format. Presumably, submitted
-risk assessments should follow this template and also be in DOCX format.
+The Union provides a risk assessment template in DOCX format. Our template is
+based on their template, but instead produces a PDF; hopefully this shouldn't
+cause any issues further down the line.
 
 More information about the Union's risk assessment procedure can be found on their
 [website][susu-risk-assessments].
