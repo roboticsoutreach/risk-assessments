@@ -9,22 +9,22 @@ To create a risk assessment using the template, copy the contents of
 file. You can also check the source code of existing risk assessments for more
 specific info.
 
-## SUSU's risk assessment requirements
+## Union Southampton's risk assessment requirements
 
-SUSU require a risk assessment for our general day-to-day activities to be
+The Union require a risk assessment for our general day-to-day activities to be
 submitted at least once per year. If this risk assessment is changed during the
-year then the new copy should of course be re-submitted to SUSU.
+year then the new copy should of course be re-submitted to the Union.
 
 Additionally, they require a risk assessment for each event we run to be
 submitted at least 3 weeks prior to the event.
 
-Risk assessments are submitted by email to groups@susu.org.
+Risk assessments are submitted by email to groups@unionsouthampton.org.
 
-SUSU provides a risk assessment template in DOCX format. Presumably, submitted
+The Union provides a risk assessment template in DOCX format. Presumably, submitted
 risk assessments should follow this template and also be in DOCX format.
 
-More information about SUSU's risk assessment procedure can be found on their
+More information about the Union's risk assessment procedure can be found on their
 [website][susu-risk-assessments].
 
 
-[susu-risk-assessments]: https://www.susu.org/groups/admin/howto/risk
+[susu-risk-assessments]: https://www.unionsouthampton.org/groups/admin/howto/risk
