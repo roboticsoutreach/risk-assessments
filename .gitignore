@@ -1,4 +1,6 @@
 *.aux
 *.out
 *.log
-*.pdf
+
+# hack to exclude compiled PDFs (which follow a YYYYMMDD naming scheme) while including any other PDFs
+20*.pdf
