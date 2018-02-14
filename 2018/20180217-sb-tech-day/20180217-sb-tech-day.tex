@@ -1,0 +1,147 @@
+% Footnotes used inline in the text.
+\newcommand{\manualhandlingfootnote}{\footnote{\url{http://www.hse.gov.uk/pubns/indg143.pdf}}}
+\newcommand{\chargingfootnote}{\footnote{\url{http://docs.sourcebots.co.uk/kit/batteries/charging/}}}
+\newcommand{\estatesfacilitiesfootnote}{\footnote{Estates and Facilities: \url{http://www.southampton.ac.uk/estates/}}}
+\newcommand{\hscfootnote}{\footnote{Health and Safety Coordinator; for the duration of this event, this role will be filled by Kier Davis (\email{me@kierdavis.com}).}}
+
+
+\newcommand{\groupname}{Southampton Competitive Robotics Outreach}
+\newcommand{\assessorname}{Kier Davis}
+\newcommand{\assessoremail}{me@kierdavis.com}
+\newcommand{\assessmentdate}{February 14, 2018}
+
+
+\newcommand{\activityname}{SourceBots - Tech Day}
+\newcommand{\activitydate}{February 17, 2018}
+\newcommand{\activitytime}{All day}
+\newcommand{\activitylocation}{
+    TBD
+}
+\newcommand{\activitysummary}{
+    This event is part of a four-month outreach programme based at the
+    university in which teams of students from local schools compete to design,
+    build and test autonomous robots. The robots must perform the simple task of
+    locating and moving marked boxes around an arena.
+
+    The event is one of a number of Tech Days, which are opportunities for the
+    teams to come on site to spend the day developing their robots while
+    receiving support from the programme organisers and interacting with other
+    teams.
+
+    The students are aged 16--18 and will be supervised by at least one teacher
+    from their school at all times.
+
+    The programme is run by the informal volunteer organisation SourceBots, who
+    will be considered event staff at this and future events.
+}
+
+
+\newcommand{\references}{
+    \reference{Guidance from the Health and Safety Executive, including manual
+    handling procedures. \\
+    \url{http://www.hse.gov.uk/risk/index.htm}}
+
+    \reference{H\&S guidance from the Union Southampton website. \\
+    \url{https://www.unionsouthampton.org/groups/admin/howto/protection}}
+
+    \reference{Lithium polymer battery charging procedure, available on the
+    SourceBots website. \\
+    \url{http://docs.sourcebots.co.uk/kit/batteries/charging/}}
+
+    \reference{Risk assessments prepared for previous events of a similar
+    nature run by us.}
+}
+
+
+\newcommand{\risks}{
+    \risk
+        {Manual handling of heavy objects}
+        {Competitors or staff could experience minor injury or back pains
+         resulting from improper lifting methods.}
+        {\item The HSE manual handling guidelines\manualhandlingfootnote are to
+         be followed for all tasks involving heavy lifting.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Obstacles on the floor, such as bags, boxes or trailing cables}
+        {Competitors or staff may suffer injury as a result of tripping.}
+        {\item Cables (such as laptop power supplies) will be routed underneath
+         desks wherever possible.
+         \item Cables that cannot be routed under desks will be clearly marked
+         to increase their visibility.
+         \item Bags, boxes and other items that are potential trip hazards will
+         be stacked neatly by the walls whenever possible.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Lithium polymer batteries}
+        {LiPo batteries can ignite if damaged or misused, resulting in
+         smoke/fire.}
+        {\item Boxes containing batteries are clearly labelled as such and will
+         be handled with care at all times.
+         \item Batteries will be routinely inspected by staff for signs of
+         damage or swelling, and set aside for safe disposal if necessary.
+         \item Batteries are only to be charged in accordance with the recorded
+         charging procedure\chargingfootnote.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Interaction with autonomous robots/robotics equipment}
+        {Competitors or staff could encounter minor injuries if the robots'
+         actuators move unexpectedly.}
+        {\item When robotics equipment is switched on, it will be treated as
+         though its actuators could become active at any moment.}
+        {\item The HSC\hscfootnote will verify that the robotics equipment does
+         not present any sharp edges. If any are found, they will be removed,
+         covered, or otherwise modified to reduce the chance and severity of
+         injury they could cause.}
+        {1} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Electrical equipment (robots, computers, battery chargers)}
+        {Competitors or staff could get electrical shocks or burns from faulty
+         equipment.}
+        {\item Computing equipment, battery chargers and other mains-powered
+         equipment has been PAT tested.
+         \item Opened food and drink is prohibited in the vicinity of
+         computers and robotics equipment.}
+        {\item The HSC will verify that all wiring done by teams or already
+         preexisting in the robotics kit is sufficiently insulated and robust
+         before the robotics kit is allowed to be switched on.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Use of manual tools}
+        {Competitors or staff could experience minor injury as a result of an
+         accident or through improper use of tools.}
+        {\item Care will be taken with tools to ensure that minimal injury
+         results in the event of an accident.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+}
+
+
+\newcommand{\postrisks}{
+    \subsection*{Risk of fire}
+
+    To minimise the risk of fire resulting from this activity, food and drink
+    will not be allowed near electrical equipment, and naked flames will be
+    prohibited. The risk of fire occurring elsewhere in the building(s) is
+    controlled primarily by the building operator\estatesfacilitiesfootnote.
+    The HSC will ensure that all people present are informed of the
+    locations of the exits and whether any fire drills are expected to take
+    place. Should a fire break out (or any other event requiring evacuation),
+    all people are to evacuate through the nearest accessible exit.
+}
+
+
+\input{../../template.tex}
