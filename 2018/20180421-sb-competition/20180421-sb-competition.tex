@@ -1,0 +1,165 @@
+% Footnotes used inline in the text.
+\newcommand{\manualhandlingfootnote}{\footnote{\url{http://www.hse.gov.uk/pubns/indg143.pdf}}}
+\newcommand{\chargingfootnote}{\footnote{\url{http://docs.sourcebots.co.uk/kit/batteries/charging/}}}
+\newcommand{\estatesfacilitiesfootnote}{\footnote{Estates and Facilities: \url{http://www.southampton.ac.uk/estates/}}}
+
+
+\newcommand{\groupname}{Student Robotics (Southampton)}
+\newcommand{\assessorname}{Kier Davis}
+\newcommand{\assessoremail}{me@kierdavis.com}
+\newcommand{\assessmentdate}{April 12, 2018}
+
+
+\newcommand{\activityname}{SourceBots - Competition}
+\newcommand{\activitydate}{April 20 to April 22, 2018}
+\newcommand{\activitytime}{All day}
+\newcommand{\activitylocation}{The Cube, Bar Two}
+\newcommand{\activitysummary}{
+    This event is part of a four-month outreach programme based at the
+    university in which teams of students from local schools compete to design,
+    build and test autonomous robots. The robots must perform the simple task of
+    locating and moving marked boxes around an arena.
+
+    The programme is run by the informal volunteer organisation SourceBots, who
+    will be considered event staff.
+
+    Competitors are aged 16--18 and will be supervised at all times by at least
+    one responsible adult (typically a teacher from the school) per team. We
+    expect 9 teams and 10--20 SourceBots volunteers to attend the event.
+
+    First-aiders are present among staff and will be identified to other
+    attendees of the event.
+}
+
+
+\newcommand{\references}{
+    \reference{Guidance from the Health and Safety Executive, including manual
+    handling procedures. \\
+    \url{http://www.hse.gov.uk/risk/index.htm}}
+
+    \reference{H\&S guidance from the Union Southampton website. \\
+    \url{https://www.unionsouthampton.org/groups/admin/howto/protection}}
+
+    \reference{Lithium polymer battery charging procedure, available on the
+    SourceBots website. \\
+    \url{http://docs.sourcebots.co.uk/kit/batteries/charging/}}
+}
+
+
+\newcommand{\risks}{
+    \risk
+        {Manual handling of heavy objects}
+        {Competitors or staff could experience minor injury or back pains
+         resulting from improper lifting methods.}
+        {\item The HSE manual handling guidelines\manualhandlingfootnote are to
+         be followed for all tasks involving heavy lifting.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Obstacles on the floor, such as bags, boxes or trailing cables}
+        {Competitors, supervisors or staff may suffer injury as a result of
+         tripping.}
+        {\item Cables (such as laptop power supplies) will be routed underneath
+         desks wherever possible.
+         \item Cables that cannot be routed under desks will be clearly marked
+         to increase their visibility.
+         \item Bags, boxes and other items that are potential trip hazards will
+         be stacked neatly by the walls whenever possible.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Lithium polymer batteries}
+        {LiPo batteries can ignite if damaged or misused, resulting in
+         smoke/fire.}
+        {\item Boxes containing batteries are clearly labelled as such and will
+         be handled with care at all times.
+         \item Batteries will be routinely inspected by staff for signs of
+         damage or swelling, and set aside for safe disposal if necessary.
+         \item Batteries are only to be charged by trained staff. The battery
+         charging procedure\chargingfootnote is to be followed at all times.
+         \item Batteries are only to be given to teams once their robot has
+         passed a safety inspection by a member of staff. This inspection must
+         check, among other things, that the robot's battery compartment is
+         rigid enough to resist damage to the battery.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Interaction with autonomous robots/robotics equipment}
+        {Competitors, supervisors or staff could encounter minor injuries if the
+         robots' actuators move unexpectedly.}
+        {\item Robots are only to be tested under supervision.
+         \item When robotics equipment is switched on, it will be treated as
+         though its actuators could become active at any moment.
+         \item The arena is to be supervised by a member of staff at all times.
+         Robots must pass a safety inspection before being allowed into the
+         arena.}
+        {\item Staff will verify that the robotics equipment does not present
+         any sharp edges. If any are found, they will be removed, covered, or
+         otherwise modified to reduce the chance and severity of injury they
+         could cause.}
+        {1} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Electrical equipment (robots, computers, battery chargers, stage
+         lighting/sound equipment)}
+        {Competitors, supervisors or staff could get electrical shocks or burns
+         from faulty equipment.}
+        {\item Computing equipment, battery chargers and other mains-powered
+         equipment has been PAT tested.
+         \item Opened food and drink is prohibited in the vicinity of computers
+         and robotics equipment.}
+        {\item Staff will verify that all wiring done by teams or already
+         preexisting in the robotics kit is sufficiently insulated and robust
+         before the robotics kit is allowed to be switched on.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+
+    \risk
+        {Use of manual and/or power tools}
+        {Competitors or staff could experience minor injury as a result of an
+         accident or through improper use of tools.}
+        {\item Care will be taken with tools to ensure that minimal injury
+         results in the event of an accident.
+         \item Power tools are only to be used by competitors while under
+         supervision by a responsible adult.}
+        {\item No further action required.}
+        {2} % Likelihood (/3)
+        {1} % Impact (/3)
+
+    \risk
+        {Soldering}
+        {Competitors may suffer burns through inappropriate use of soldering
+         irons. Soldering may produce fumes which can lead to asthma.}
+        {\item All soldering irons are to be treated as if they are hot even if
+         they are unplugged (since they may still be cooling down).
+         \item Soldering will only be permitted in rooms with appropriate
+         ventilation.
+         \item Safety glasses are to be worn when soldering.}
+        {\item No further action required.}
+        {1} % Likelihood (/3)
+        {2} % Impact (/3)
+}
+
+
+\newcommand{\postrisks}{
+    \subsection*{Risk of fire}
+
+    To minimise the risk of fire resulting from this activity, food and drink
+    will not be allowed near electrical equipment, and naked flames will be
+    prohibited. The risk of fire occurring elsewhere in the building(s) is
+    controlled primarily by the building operator\estatesfacilitiesfootnote.
+    Staff will ensure that all people present are informed of the locations of
+    the exits and whether any fire drills are expected to take place. Should a
+    fire break out (or any other event requiring evacuation), all people are to
+    evacuate through the nearest accessible exit.
+}
+
+
+\input{../../template.tex}
